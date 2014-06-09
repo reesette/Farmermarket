@@ -1,0 +1,243 @@
+html, body 
+	{ 
+	color:#5C5C5C;
+	width: 90%;
+	}
+
+#frame{
+	width: 90%;
+	height: 90%;
+	margin: 1%;
+	}
+
+h1{color:#2E8A2E;
+text-shadow: 0.1em 0.1em 0.2em #666;
+padding-top: 5px;
+font-weight: 600;
+font-family:sans-serif;
+ }
+
+
+h4 {
+padding-top: -5px;
+padding-left: 8px;
+padding-bottom: 5px;
+font-weight: 600;
+font-family:sans-serif;
+	font-size:97%; }
+	
+h5 {color:#333333;
+margin: 0;
+padding-top: 5px;
+padding-left: 8px;
+padding-bottom: 5px;
+font-weight: 550;
+font-family:sans-serif;
+	font-size:83%; }
+	
+h6 {color:#333333;
+margin: 0;
+padding-top: 5px;
+padding-left:-2px;
+padding-bottom: 5px;
+font-weight: 550;
+font-family:sans-serif;
+	font-size:90%; }
+	
+#mapspace p{color:#333333;
+margin: 0;
+padding-top: 5px;
+padding-left: 5px;
+padding-bottom: 5px;
+font-weight: 550;
+font-family:sans-serif;
+	font-size:75%;
+}
+	
+#maplegendspace{
+	width: 600px;
+	height: 125px;
+ 	 margin: 8px 0px 0px 0px;
+ 	} 	
+	#legendheader{
+	margin: 0px 0px 0px 0px;
+	width:150px;
+	}		
+	#legendsubheader{
+	float:left;
+	margin: -30px 0px 0px 0px;
+	width:130px;
+	}
+	#legend{
+	float:right;
+	width:433px;
+	height: 110px;
+	margin: 0px 5px 0px 0px;
+	padding: 0px 7px 0px 7px;
+	background: #f0f0f0;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	-moz-box-shadow:  0 0 5px #999;
+	-webkit-box-shadow:  0 0 5px#999;
+	box-shadow:  0 0 5px #999;
+	}
+/*		#legendcities{
+	width: 150px;
+	margin:10px 0px 2px 5px;
+	float:left;
+	}*/
+		#legendtext{
+	width: 133px;
+	margin:9px 0px 0px 0px;
+	float:left;
+	}
+		#legendgeolocate{
+	float:right;
+	margin:9px 5px 0px 0px;
+	width:130px;
+}
+		#legendgeoaddress{
+	float:right;
+	margin:5px 7px 0px 7px;
+        padding: 5px 0px;
+	width:145px;
+	}
+
+
+#header a {color: #2E8A2E;text-decoration: none;
+margin-bottom: -5px;}
+
+#mapspace{
+	float:left;
+	width: 600px;
+	height: 600px;	
+	margin: -5px 0px 0px 0px;}
+	#map_canvas{
+	float:left;
+ 	margin: 0px 0px 9px 0px;
+  	height: 515px;
+	width: 600px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	/*-moz-box-shadow:  0 0 5px #999;
+	-webkit-box-shadow:  0 0 5px#999;
+	box-shadow:  0 0 5px #999;*/
+	}
+	#footerlegend{
+	height:60px;
+	float:right; 
+	width: 590px;
+	margin:0px 0px 0px 0px;
+	padding: 0px 0px 7px 9px;
+	font-size:95%;
+	background: #f0f0f0;
+		-moz-border-radius: 7px;
+		border-radius: 7px;
+		-moz-box-shadow:  0 0 5px #999;
+		-webkit-box-shadow:  0 0 5px#999;
+		box-shadow:  0 0 5px #999;}
+	#footerhere{
+	float:right;
+	margin:6px 12px 0px 00px;
+	width:90px;
+	height:45px;}	
+	#footerall{
+	float:right;
+	margin:-12px 12px 0px 0px;
+	width:100px;
+	height:45px;}	
+	#footertoday{
+	float:right;
+	margin:-12px 12px 0px 0px;
+	width:100px;
+	height:45px;}	
+	#footernearest{
+	float:right;
+	margin:-12px 10px 0px 0px;
+	width:100px;
+	height:45px;}
+	#etc{
+	float:right;
+	font-size:95%;
+	margin:12px 0px 0px 5px;
+	width:125px;
+	height:45px;}
+
+a { margin: 0px 0px 0px 7px;
+	color: #5c5c5c;
+	line-height: 18px}
+
+h3 {text-align:center;}
+
+input.zoom{
+color: #333333;
+font-size:9px; 
+font-style:italic;
+}
+
+input.button{
+color: #333333;
+font-size:9px; 
+font-style:italic;
+padding: 2px;
+}
+
+#button,#addbutton{
+font-size:10px; 
+
+}
+#legendgeoaddress input{margin: 5px 0px 5px 4px; width: 95%}
+#legendtext input{margin: 5px 0px 5px 4px}
+
+#extratext{
+  	float: right;
+  	width:100%;
+  	height: 25px;
+  	margin: 25px 0px 0px 20px;
+  	//border: solid 2px;
+  		}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+h1{font-family:sans-serif;font-size:170%;}
+h4 {font-family:sans-serif; font-size:75%; }	
+h5 {font-family:sans-serif;font-size:70%; }	
+h6 {font-family:sans-serif;font-size:80%; }
+a { text-decoration: none;color: #333333;font-weight: 600;font-family:sans-serif;font-size:80%; }
+#legendgeoaddress input{margin: 5px 0px 12px 4px}
+}
+
+@media only screen and (device-width: 768px) {
+  /* iPad screen size rules */
+h1{font-family:sans-serif;font-size:170%;}
+h4 {font-family:sans-serif; font-size:70%; }	
+h5 {font-family:sans-serif;font-size:70%; }	
+h6 {font-family:sans-serif;font-size:80%; }
+a { text-decoration: none;color: #333333;font-weight: 600;font-family:sans-serif;font-size:80%; }
+#legendgeoaddress input{margin: 3px 0px 12px 4px}
+}
+@media only screen and (min-device-width: 481px) and
+(max-device-width: 1024px) and (orientation:portrait) {
+  /* Portrait iPad display */
+  h1{font-family:sans-serif;font-size:170%;}
+h4 {font-family:sans-serif; font-size:70%; }	
+h5 {font-family:sans-serif;font-size:70%; }	
+h6 {font-family:sans-serif;font-size:80%; }
+a { text-decoration: none;color: #333333;font-weight: 600;font-family:sans-serif;font-size:80%; }
+#legendgeoaddress input{margin: 2px 0px 12px 4px}
+}
+@media only screen and (min-device-width: 481px) and
+(max-device-width: 1024px) and (orientation:landscape) {
+  /* Landscape iPad display */
+}
+@media screen and (max-device-width: 480px) {
+  /* All devices with display width less then 480px
+  will obey the following rules */
+  #legendgeoaddress input{margin: 2px 0px 5px 4px; width: 95%;
+}
+
+
+@media print 
+	{
+  html, body {
+    height: auto;
+  	}

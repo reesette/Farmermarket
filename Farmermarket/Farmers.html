@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="keywords" content="farmers markets, markets, farm stands" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>Farmers Mark.it</title>
+<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="Farmersie.css" />
+<![endif]-->
+
+<script language="javascript" type="text/javascript">
+
+   if(navigator.userAgent.indexOf('Win') > -1 && navigator.userAgent.indexOf('Firefox') > 0)
+   {document.write ('<link rel=\"stylesheet\" href="Farmersffpc.css" type=\"text/css\" media=\"screen\" />');}
+    if(navigator.userAgent.indexOf('Win') > -1 && navigator.userAgent.indexOf('Chrome') > 0)
+   {document.write ('<link rel=\"stylesheet\" href="Farmersffpc.css" type=\"text/css\" media=\"screen\" />');}
+ </script>
+
+<link href="Farmers.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="Farmers.js"></script>
+</head>
+
+
+<body  onload="initialize();geolocate();">
+<div id="frame">
+<div id="maplegendspace">
+	<div id="legend">
+		<div id="legendtext">
+			<h5>Click on an apple to zoom to your city and find farmers markets near you.</h5>
+			<input id="unzoom" class="zoom" style="visiblity:hidden" onclick="doUnzoom(); getStartMarkets()" type="button" value="Unzoom"/>
+		</div>
+		<div id="legendgeoaddress">	
+		
+			<input id="button" class="button" value="Geolocate from browser" onclick="geolocate()" type="button"/>
+			<input id="addbutton" class="button" value="Geocode from address" onclick="codeAddress()" type="button"/>
+			<input id="address" value="address / intersection" type="text" />
+		</div> 		
+		<div id="legendgeolocate">
+			<h5>Find the open farmers market nearest to you by using your browser (with location services) or entering your address.</h5>
+		</div>	 
+	</div>
+	<div id="legendheader">
+		<h1>FARMERS' MARK<img src="mapicons/applesimplered.png" alt="Other Markets" height="18" width="16" />IT</h1>
+	</div>
+	<div id="legendsubheader">
+		<h4>Pinpoint your closest open farmers market</h4>
+	</div>
+	</div>
+<div id="mapspace">
+	<div id="map_canvas"></div>
+	<div id="footerlegend">
+		<div id="etc"><br><a href="FarmersAbout.html">About</a></div>
+		<div id="footernearest"><img src="mapicons/applesimple.png" alt="Farmers Market" height="37" width="32" /><h6>Nearest Open Farmers Market</h6></div>		
+		<div id="footertoday"><img src="mapicons/applesimplered.png" alt="Other Markets" height="37" width="32" /> <br><h6>Farmers Markets Open Today</h6></div>
+		<div id="footerall"><img src="mapicons/applegray.png" alt="Other Markets" height="37" width="32" /> <br><h6>Farmers Markets Not Open Today</h6></div>
+		<div id="footerhere"><img src="mapicons/homeinvert.png" alt="You are here" height="25" width="25" /> <br><h6>You are here</h6></div>
+	</div> 
+	<p>&#169;<a href="www.aquacarta.com">Aquacarta</a></p>
+</div>
+
+
+<div id="extratext"></div>
+
+<div id="FMText"></div>
+<div id="errormessage2"></div>
+<div id="addbutton2"></div>
+
+
+</div>
+
+</body>
+</html>
